@@ -6,12 +6,12 @@
 // 1. Object to JSON
 // stringfy(to obj)
 let json = JSON.stringify(true);
-console.log(json);
+console.log(json);//true
 
 json = JSON.stringify(['apple', 'banana']);
-console.log(json);
+console.log(json);//["apple", "banana"]
 
-const rabbit = {
+const rabbit = {//object
   name: 'tori',
   color: 'white',
   size: null,
@@ -21,10 +21,10 @@ const rabbit = {
   },
 };
 
-json = JSON.stringify(rabbit);
+json = JSON.stringify(rabbit);//json으로 변환
 console.log(json);
 
-json = JSON.stringify(rabbit, ['name', 'color', 'size']);
+json = JSON.stringify(rabbit, ['name', 'color', 'size']); // 해당하는 property만 출력 가능
 console.log(json);
 
 json = JSON.stringify(rabbit, (key, value) => {
