@@ -9,9 +9,9 @@ let json = JSON.stringify(true);
 console.log(json);//true
 
 json = JSON.stringify(['apple', 'banana']);
-console.log(json);//["apple", "banana"]
+console.log(json);// ["apple", "banana"]
 
-const rabbit = {//object
+const rabbit = {// object
   name: 'tori',
   color: 'white',
   size: null,
@@ -24,7 +24,8 @@ const rabbit = {//object
 json = JSON.stringify(rabbit);//json으로 변환
 console.log(json);
 
-json = JSON.stringify(rabbit, ['name', 'color', 'size']); // 해당하는 property만 출력 가능
+json = JSON.stringify(rabbit, ['name', 'color', 'size']); 
+// 해당하는 property만 출력 가능
 console.log(json);
 
 json = JSON.stringify(rabbit, (key, value) => {
