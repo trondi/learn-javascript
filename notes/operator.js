@@ -9,17 +9,17 @@ console.log(1 - 1); // substract
 console.log(1 / 1); // divide
 console.log(1 * 1); // multiply
 console.log(5 % 2); // remainder
-console.log(2 ** 3); // exponentiation
+console.log(2 ** 3); // exponentiation 제곱..
 
 // 3. Increment and decrement operators
 let counter = 2;
-const preIncrement = ++counter;
-// counter = counter + 1;
-// preIncrement = counter;
+const preIncrement = ++counter; 
+// counter = counter + 1;    먼저 1을 더하고 = 3
+// preIncrement = counter;   대입 = 3
 console.log(`preIncrement: ${preIncrement}, counter: ${counter}`);
 const postIncrement = counter++;
-// postIncrement = counter;
-// counter = counter + 1;
+// postIncrement = counter;   대입하고 = 2
+// counter = counter + 1;    1을 더함 =3
 console.log(`postIncrement: ${postIncrement}, counter: ${counter}`);
 const preDecrement = --counter;
 console.log(`preDecrement: ${preDecrement}, counter: ${counter}`);
@@ -44,7 +44,7 @@ console.log(10 >= 6); // greater than or equal
 const value1 = true;
 const value2 = 4 < 2;
 
-// || (or), finds the first truthy value
+// || (or), finds the first truthy value : 처음으로 true가 나오면 멈춤
 console.log(`or: ${value1 || value2 || check()}`);
 
 // && (and), finds the first falsy value
@@ -52,6 +52,10 @@ console.log(`and: ${value1 && value2 && check()}`);
 
 // often used to compress long if-statement
 // nullableObject && nullableObject.something
+//nullobject가 null이 아닐때만 sth을 받아옴
+if (nullableObject != null) {
+  nullableObject.something;
+}
 
 function check() {
   for (let i = 0; i < 10; i++) {
