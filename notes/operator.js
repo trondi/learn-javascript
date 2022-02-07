@@ -76,7 +76,7 @@ const numberFive = 5;
 console.log(stringFive == numberFive);
 console.log(stringFive != numberFive);
 
-// === strict equality, no type conversion
+// === strict equality, no type conversion 타입도 확인
 console.log(stringFive === numberFive);
 console.log(stringFive !== numberFive);
 
@@ -84,13 +84,13 @@ console.log(stringFive !== numberFive);
 const ellie1 = { name: 'ellie' };
 const ellie2 = { name: 'ellie' };
 const ellie3 = ellie1;
-console.log(ellie1 == ellie2);
-console.log(ellie1 === ellie2);
-console.log(ellie1 === ellie3);
+console.log(ellie1 == ellie2); //f
+console.log(ellie1 === ellie2); //f
+console.log(ellie1 === ellie3); //t
 
 // equality - puzzler
-console.log(0 == false);
-console.log(0 === false);
+console.log(0 == false); //t
+console.log(0 === false); //
 console.log('' == false);
 console.log('' === false);
 console.log(null == undefined);
